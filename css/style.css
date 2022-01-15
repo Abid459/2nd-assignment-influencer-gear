@@ -1,0 +1,295 @@
+/* -------common css start--------*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 10px;
+    /* font-family: 'Lato', sans-serif; */
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+}
+
+:root {
+    --button-color: rgb(0, 99, 129);
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+
+}
+.button {
+    background: var(--button-color);
+    color: blanchedalmond;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 40px;
+    transition: 0.3s;
+    /* border: 2px solid var(--button-color); */
+    font-weight: 400;
+
+    font-size: 1.6rem;
+}
+
+.button i{
+    margin-left: 5px;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 16px -3px var(--button-color);
+    background: rgba(0, 0, 0, 0);
+    color: var(--button-color);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 3rem;
+    word-spacing: 9px;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p,
+a,
+li {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: rgb(75, 75, 75);
+}
+
+/* =======common css end======= */
+
+
+/* --------header section start---------- */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 70px auto;
+}
+
+
+
+header .manu li {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+/* ============header section end ============ */
+
+
+/* -----banner section start---------------- */
+.banner-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    /* margin: 100px 0; */
+}
+
+
+
+.banner-section p {
+    margin: 25px 0;
+    /* letter-spacing: 1px; */
+    line-height: 1.6;
+    color: rgb(75, 75, 75);
+    text-align: justify;
+}
+
+.banner-section .banner-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-section .banner-right img {
+    width: 100%;
+    border: 1px solid #022B47;
+    border-radius: 50%;
+    padding: 40px;
+    width: 80%;
+    /* align-self: center; */
+}
+
+.banner-section .banner-right img::after {
+    content: '';
+    width: 300px;
+    height: 300px;
+    background: #000;
+}
+
+/* ========banner section end=============== */
+
+/* --------brand section start----------------- */
+.brand-section .brand {
+    display: grid;
+    /* justify-content: space-evenly; */
+    grid-template-columns: repeat(7, 1fr);
+    border-width: 1px;
+    border-style: solid;
+    align-items: center;
+    justify-items: center;
+    border-image:
+        linear-gradient(to right, #ffffff, #c0c0c0, rgb(255, 255, 255)) 30;
+    padding: 30px 0;
+    margin-bottom: 140px;
+    /* border-right: 1px solid rgb(233, 233, 233); */
+
+}
+
+.brand-section img {
+    margin-right: 20px;
+}
+
+.brand-section img:last-child {
+    margin-right: 0;
+}
+
+/*=========brand section end=================== */
+
+/* --------gallery section start------------------- */
+
+.gallery-section>.container {
+    display: grid;
+    grid-gap: 50px;
+    grid-template:repeat(3,1fr) /repeat(3,1fr);
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.gallery-section .card {
+    padding: 10px;
+    border: 1px solid #022b4783;
+    border-radius: 7px;
+    transition: .3s;
+    
+}
+.card img{
+    width: 30px;
+}
+
+.gallery-section>h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: 1px;
+}
+
+.gallery-section>.container>p {
+    grid-column: 3/-1;
+    text-align: right;
+    color: var(--button-color);
+    cursor: pointer;
+}
+
+.gallery-section>.container>p>i{
+    margin-left: 9px;
+}
+
+.gallery-section .card .info p:last-child{
+    font-size: 1.4rem;
+    margin-top: 3px;
+}
+.card:hover .info {
+    background-image: linear-gradient(rgba(246, 246, 246, 0), rgba(238, 238, 238, 0.657), rgba(231, 231, 231, 0.993));
+}
+
+.gallery-section .card h3 {
+    margin: 20px 0 5px 0;
+}
+
+.gallery-section .card img {
+    width: 100%;
+
+}
+
+.gallery-section .card .info {
+
+    padding: 20px 10px;
+    height: 210px;
+    overflow: hidden;
+    
+    /* transition: s; */
+}
+
+.gallery-section .card .info .rating {
+    display: flex;
+    color: #F58221;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.gallery-section .card .info .rating>p {
+    margin-left: 20px;
+}
+
+/* ===========gallery section end================== */
+
+/* -------------featured section start-------------- */
+.featured-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-section p {
+    margin: 15px 0;
+}
+
+.featured-section img {
+    width: 80%;
+}
+
+/* ================featured section end=============== */
+
+/* -----------footer section start----------- */
+footer {
+    text-align: center;
+    margin-top: 120px;
+    background: rgb(2, 43, 71);
+    /* color: rgb(0, 0, 0); */
+    padding: 40px;
+    color: rgb(255, 255, 255);
+    /* display: flex; */
+    /* background: #000; */
+    /* color: rgb(255, 255, 255); */
+}
+footer p{
+    color: rgb(255, 255, 255);
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+footer i{
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+/* ============footer section end ================ */

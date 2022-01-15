@@ -1,0 +1,59 @@
+@media (max-width:650px) {
+    html {
+        font-size: 9px;
+    }
+
+    header .manu {
+        display: none;
+    }
+
+    .banner-section {
+        grid-template: 1fr 1fr/1fr;
+    }
+
+    .banner-section .banner-left {
+        text-align: center;
+    }
+
+    .banner-section .banner-right {
+        grid-row: 1/2;
+        /* background: #000; */
+    }
+
+    /* -----brand---- */
+    .brand-section .brand {
+        /* display: grid; */
+        grid-template: repeat(1, 1fr)/repeat(3, 1fr);
+        /* background: #000; */
+    }
+
+    /* ------gallery-------------- */
+    .gallery-section>.container{
+        display: flex;
+        flex-direction: column;
+        /* background: #000; */
+    }
+
+    /* -------featred section------- */
+    .featured-section {
+        grid-template: 1fr 1fr/1fr;
+        justify-content: center;
+        justify-self: center;
+        text-align: center;
+    }
+}
+
+/* ===========for tablet================= */
+@media (min-width:651px) and (max-width:1000px) {
+    .gallery-section>.container{
+        grid-template:repeat(4,1fr) /1fr 1fr;
+        /* grid-auto-columns: hidden; */
+    }
+    .gallery-section>.container>p {
+        grid-column: 2/-1;
+    }
+    .card9{
+        display: none;
+    }
+    
+}
