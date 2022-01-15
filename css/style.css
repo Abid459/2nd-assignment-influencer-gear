@@ -37,6 +37,7 @@ li {
     list-style: none;
 
 }
+
 .button {
     background: var(--button-color);
     color: blanchedalmond;
@@ -50,7 +51,7 @@ li {
     font-size: 1.6rem;
 }
 
-.button i{
+.button i {
     margin-left: 5px;
 }
 
@@ -88,19 +89,29 @@ li {
 
 /* --------header section start---------- */
 header .container {
-    display: flex;
-    justify-content: space-between;
+    display:flex;
     width: 90%;
     margin: 70px auto;
+    justify-content: space-between;
+    /* margin-right: 30px; */
 }
-
-
-
+header .container h3{
+    font-size: 3rem;
+}
+.header-right{
+display: flex;
+}
+.shoping-cart li{
+    display: inline-block;
+    margin-right: 20px;
+}
 header .manu li {
     margin-right: 20px;
     display: inline-block;
 }
-
+.fa-bars{
+    display: none;
+} 
 /* ============header section end ============ */
 
 
@@ -179,7 +190,7 @@ header .manu li {
 .gallery-section>.container {
     display: grid;
     grid-gap: 50px;
-    grid-template:repeat(3,1fr) /repeat(3,1fr);
+    grid-template: repeat(3, 1fr) /repeat(3, 1fr);
     max-width: 1500px;
     margin: 0 auto;
 }
@@ -189,9 +200,10 @@ header .manu li {
     border: 1px solid #022b4783;
     border-radius: 7px;
     transition: .3s;
-    
+
 }
-.card img{
+
+.card img {
     width: 30px;
 }
 
@@ -208,14 +220,15 @@ header .manu li {
     cursor: pointer;
 }
 
-.gallery-section>.container>p>i{
+.gallery-section>.container>p>i {
     margin-left: 9px;
 }
 
-.gallery-section .card .info p:last-child{
+.gallery-section .card .info p:last-child {
     font-size: 1.4rem;
     margin-top: 3px;
 }
+
 .card:hover .info {
     background-image: linear-gradient(rgba(246, 246, 246, 0), rgba(238, 238, 238, 0.657), rgba(231, 231, 231, 0.993));
 }
@@ -234,7 +247,7 @@ header .manu li {
     padding: 20px 10px;
     height: 210px;
     overflow: hidden;
-    
+
     /* transition: s; */
 }
 
@@ -270,6 +283,33 @@ header .manu li {
 
 /* ================featured section end=============== */
 
+/* --------review section start------------- */
+.reviews-section {
+    text-align: center;
+}
+
+.reviews-section h2 {
+    margin: 150px 0 50px 0;
+}
+
+.reviews-section .container {
+    display: grid;
+    grid-template: 1fr/repeat(3, 1fr);
+    grid-gap: 40px;
+    text-align: center;
+}
+
+.review-card {
+    /* width: 40%; */
+    background: rgb(216, 216, 216);
+    padding: 40px;
+    border-radius: 5px;
+    /* margin: 10px; */
+}
+
+/* ==========review section end================== */
+
+
 /* -----------footer section start----------- */
 footer {
     text-align: center;
@@ -282,12 +322,14 @@ footer {
     /* background: #000; */
     /* color: rgb(255, 255, 255); */
 }
-footer p{
+
+footer p {
     color: rgb(255, 255, 255);
     margin: 10px 0;
     font-size: 1.4rem;
 }
-footer i{
+
+footer i {
     font-size: 2rem;
     margin-left: 10px;
 }

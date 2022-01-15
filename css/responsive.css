@@ -1,14 +1,29 @@
+/* ====for mobile============ */
 @media (max-width:650px) {
     html {
         font-size: 9px;
     }
-
+    header .container{
+        margin-bottom: 0px;
+    }
+    header .container h3{
+        font-size: 2rem;
+        position: absolute;
+        top: 20px;
+        right: 25%;
+        
+    }
     header .manu {
         display: none;
+    }
+    .fa-bars {
+        display: inline-block;
+        font-size: 2rem;
     }
 
     .banner-section {
         grid-template: 1fr 1fr/1fr;
+        margin-top: 0;
     }
 
     .banner-section .banner-left {
@@ -41,6 +56,11 @@
         justify-self: center;
         text-align: center;
     }
+
+    /* --------reviews ----------- */
+    .reviews-section .container{
+        grid-template: repeat(3, 1fr)/1fr;
+    }
 }
 
 /* ===========for tablet================= */
@@ -54,6 +74,14 @@
     }
     .card9{
         display: none;
+    }
+
+    /* ----------review section-------- */
+    .reviews-section .container {
+        grid-gap: 10px;
+    }
+    .reviews-section .container .review-card{
+        padding: 20px;
     }
     
 }
